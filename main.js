@@ -20,13 +20,18 @@ var gr02, gr04, gr06;
 
 
 function calcFun() {
-	TempZar = document.getElementById('Tzar').value;
+	//считывает температуру заряда
+	TempZar = document.getElementById('Tzar').value; 
+	//вычисляет dT
 	deltaTempZar = parseInt(TempZar) - TEMP_CONST;
-
+	//вычисляем разницу атмосферногго давления
 	deltaHamc = document.getElementById('dHamc').value;
 	deltaHamc = artAroundXXX(deltaHamc);
+	//высота позиции метео
 	hamc = document.getElementById('ha').value;
+	//высота огневой позиции
 	hop = document.getElementById('Ho').value;
+	//дельта H
 	deltaHop = Math.round(parseInt(deltaHamc) + (parseInt(hamc) - parseInt(hop))/POROG);
 
 	gr02[0] = document.getElementById('dT02').value;
@@ -40,7 +45,7 @@ function calcFun() {
 
 	alert(deltaHop);
 }
-
+//функция на округление для 5*
 function artAroundXX (x) {
 	if (x > 50){
 		x = x - 50;
@@ -50,7 +55,7 @@ function artAroundXX (x) {
 		return x;
 	}
 }
-
+//функция на округление для 5**
 function artAroundXXX (x) {
 	if (x > 500){
 		x = x - 500;

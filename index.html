@@ -1,58 +1,57 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
-    <title>Шаблон Bootstrap 101</title>
+    <title>Вычисление поправок</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
 
     <div class="container">
-      <h1>
-        <p>
-          Метео 110Х<br>
-          -XX XXX(время)<br>
-          -<input class="span2" placeholder="XXXX АМС" id="ha"><br>
-          -<input class="span2" placeholder="XXX dH0" id="dHamc"><br>
-          <input class="span2" placeholder="XX dT"><br>
+          <p>
+          Метео11XX<br>
+          -XX XX X (время)<br>
+          -<input class="span2" placeholder="XXXX AMC" id="ha"><br>
+          <input class="span2" placeholder="XXX dH0" id="dHamc"><br>
+          <input class="span2" placeholder="XX dT">-<br>
 
-          -02-<input class="span2" placeholder="XX dT" id="dT02"><br>
+          02-<input class="span2" placeholder="XX dT" id="dT02"><br>
           <input class="span2" placeholder="XX aw" id="aw02"><br>
-          <input class="span2" placeholder="XX v" id="v02"><br>
+          <input class="span2" placeholder="XX v" id="v02">-<br>
 
-          -04-<input class="span2" placeholder="XX dT" id="dT04"><br>
+          04-<input class="span2" placeholder="XX dT" id="dT04"><br>
           <input class="span2" placeholder="XX aw" id="aw04"><br>
-          <input class="span2" placeholder="XX v" id="v04"><br>
+          <input class="span2" placeholder="XX v" id="v04">-<br>
          
-          -08-<input class="span2" placeholder="XX dT"><br>
+          08-<input class="span2" placeholder="XX dT"><br>
           <input class="span2" placeholder="XX aw"><br>
-          <input class="span2" placeholder="XX v"><br>
+          <input class="span2" placeholder="XX v">-<br>
           
-          -12-<input class="span2" placeholder="XX dT"><br>
+          12-<input class="span2" placeholder="XX dT"><br>
           <input class="span2" placeholder="XX aw"><br>
-          <input class="span2" placeholder="XX v"><br>
+          <input class="span2" placeholder="XX v">-<br>
           
-          -16-<input class="span2" placeholder="XX dT"><br>
+          16-<input class="span2" placeholder="XX dT"><br>
           <input class="span2" placeholder="XX aw"><br>
-          <input class="span2" placeholder="XX v"><br>
+          <input class="span2" placeholder="XX v">-<br>
          
-          -20-<input class="span2" placeholder="XX dT"><br>
+          20-<input class="span2" placeholder="XX dT"><br>
           <input class="span2" placeholder="XX aw"><br>
-          <input class="span2" placeholder="XX v"><br>
+          <input class="span2" placeholder="XX v">-<br>
           
-          -24-<input class="span2" placeholder="XX dT"><br>
+          24-<input class="span2" placeholder="XX dT"><br>
           <input class="span2" placeholder="XX aw"><br>
-          <input class="span2" placeholder="XX v"><br>
+          <input class="span2" placeholder="XX v">-<br>
          
-          -30-<input class="span2" placeholder="XX dT"><br>
+          30-<input class="span2" placeholder="XX dT"><br>
           <input class="span2" placeholder="XX aw"><br>
-          <input class="span2" placeholder="XX v"><br>
+          <input class="span2" placeholder="XX v">-<br>
          
-          -40-<input class="span2" placeholder="XX dT"><br>
+          40-<input class="span2" placeholder="XX dT"><br>
           <input class="span2" placeholder="XX aw"><br>
-          <input class="span2" placeholder="XX v"><br>
+          <input class="span2" placeholder="XX v">-<br>
           
-          -50-<input class="span2" placeholder="XX dT"><br>
+          50-<input class="span2" placeholder="XX dT"><br>
           <input class="span2" placeholder="XX aw"><br>
           <input class="span2" placeholder="XX v"><br>
        </p>
@@ -65,54 +64,18 @@
           <option value="4">Второй</option>
           <option value="5">Третий</option>
         </select><br>
+      
 
-        Дальности:
-        <label class="checkbox inline">
-          <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
-        </label>
-        <label class="checkbox inline">
-          <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
-        </label>
-        <label class="checkbox inline">
-          <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
-        </label>
-        <label class="checkbox inline">
-          <input type="checkbox" id="inlineCheckbox4" value="option1"> 4
-        </label>
-        <label class="checkbox inline">
-          <input type="checkbox" id="inlineCheckbox5" value="option2"> 5
-        </label>
-        <label class="checkbox inline">
-          <input type="checkbox" id="inlineCheckbox6" value="option3"> 6
-        </label>
-        <label class="checkbox inline">
-          <input type="checkbox" id="inlineCheckbox7" value="option1"> 7
-        </label>
-        <label class="checkbox inline">
-          <input type="checkbox" id="inlineCheckbox8" value="option2"> 8
-        </label>
-        <label class="checkbox inline">
-          <input type="checkbox" id="inlineCheckbox9" value="option3"> 9
-        </label>
-        <label class="checkbox inline">
-          <input type="checkbox" id="inlineCheckbox10" value="option1"> 10
-        </label>
-        <label class="checkbox inline">
-          <input type="checkbox" id="inlineCheckbox11" value="option2"> 11
-        </label>
-        <label class="checkbox inline">
-          <input type="checkbox" id="inlineCheckbox12" value="option3"> 12
-        </label>
-
-          <input class="span2" placeholder="Альфа ОН"><br>
-          <input class="span2" placeholder="Т заряда" id="Tzar"><br>
-          <input class="span2" placeholder="Ноп" id="Ho"><br>
+          <input class="span2" placeholder="Угол ОН"><br>
+          <input class="span2" placeholder="Температура заряда" id="Tzar"><br>
+          <input class="span2" placeholder="Высота огневой позиции" id="Ho"><br>
           <input class="span2" placeholder="dV0сум"><br>
+          <!-- достаточно указать центральную дальность, вторые две будут +-2км --> 
+          <input class="span2" placeholder="Центральная дальность, км" id="dist"><br> 
        </p>
        <p><button class="btn btn-large btn-primary" type="button" id="btnMain" onclick="calcFun();">Рассчитать</button><p>
-      </h1>
+      
     </div>
-
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="main.js"></script>

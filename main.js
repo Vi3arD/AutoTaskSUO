@@ -20,7 +20,7 @@ var gr02, gr04, gr06;
 var distance01, distance02, distance03;
 
 function main(){
-	calcFun();
+	calcFun();	
 }
 
 function calcFun() {
@@ -62,8 +62,8 @@ function readData() {
     distance01[5] = document.getElementById('dXtZ01').value;
     distance01[6] = document.getElementById('dXv01').value;
 
-    distance01[6] = document.getElementById('wX01').value;
-    distance01[6] = document.getElementById('wY01').value;
+    distance01[7] = document.getElementById('wX01').value;
+    distance01[8] = document.getElementById('wY01').value;
     
     
 	distance02[0] = document.getElementById('z02').value;
@@ -74,8 +74,8 @@ function readData() {
     distance02[5] = document.getElementById('dXtZ02').value;
     distance02[6] = document.getElementById('dXv02').value;
 
-    distance02[6] = document.getElementById('wX02').value;
-    distance02[6] = document.getElementById('wY02').value;
+    distance02[7] = document.getElementById('wX02').value;
+    distance02[8] = document.getElementById('wY02').value;
     
     
 	distance03[0] = document.getElementById('z03').value;
@@ -86,8 +86,8 @@ function readData() {
     distance03[5] = document.getElementById('dXtZ03').value;
     distance03[6] = document.getElementById('dXv03').value;
 
-    distance03[6] = document.getElementById('wX03').value;
-    distance03[6] = document.getElementById('wY03').value;
+    distance03[7] = document.getElementById('wX03').value;
+    distance03[8] = document.getElementById('wY03').value;
 }
 //функция на округление для 5*
 function artAroundXX (x) {
